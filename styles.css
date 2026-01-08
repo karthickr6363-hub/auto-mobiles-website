@@ -252,6 +252,31 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
+.btn-dashboard {
+    background-color: #6c757d;
+    color: var(--white) !important;
+    padding: 6px 14px !important;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+}
+
+.btn-dashboard::after {
+    display: none;
+}
+
+.btn-dashboard:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -1586,6 +1611,28 @@ body {
 .blog-content .btn-link {
     align-self: center;
     margin-top: auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.blog-content .btn-link:hover {
+    background-color: #B8903A;
+    transform: translateX(5px);
+    gap: 10px;
+    color: var(--white) !important;
+}
+
+.blog-content .btn-link i {
+    transition: transform 0.3s ease;
+}
+
+.blog-content .btn-link:hover i {
+    transform: translateX(5px);
 }
 
 .blog-meta {
@@ -2011,6 +2058,17 @@ body {
 
     .hero-split-buttons {
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .hero-split-buttons .btn-hero {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        max-width: 200px;
+        width: auto;
     }
 
     .hero-features {
@@ -2190,6 +2248,27 @@ body {
         pointer-events: auto !important;
     }
 
+    .nav-menu .btn-dashboard {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: #6c757d !important;
+        color: var(--white) !important;
+        border-radius: 5px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        border: none !important;
+        position: relative !important;
+        z-index: 1 !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -2267,6 +2346,11 @@ body {
     }
 
     .btn-book {
+        padding: 6px 16px !important;
+        font-size: 0.9rem;
+    }
+
+    .btn-dashboard {
         padding: 6px 16px !important;
         font-size: 0.9rem;
     }
@@ -2418,6 +2502,13 @@ body {
     }
 
     .nav-menu .btn-book {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .nav-menu .btn-dashboard {
         display: block !important;
         width: 100% !important;
         text-align: center !important;
@@ -2951,6 +3042,27 @@ body {
         visibility: visible !important;
         opacity: 1 !important;
         background-color: var(--primary-color) !important;
+        color: var(--white) !important;
+        border-radius: 5px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        border: none !important;
+        white-space: nowrap !important;
+        position: relative !important;
+        z-index: 1 !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
+    .nav-menu .btn-dashboard {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background-color: #6c757d !important;
         color: var(--white) !important;
         border-radius: 5px !important;
         font-weight: 600 !important;
