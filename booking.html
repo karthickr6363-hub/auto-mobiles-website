@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - AutoCare</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@autocare.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn-book active">Book Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your service appointment with ease</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <form class="booking-form" id="bookingForm">
+                    <!-- Car Model Selection -->
+                    <div class="form-group">
+                        <label for="carModel">Car Model *</label>
+                        <select id="carModel" name="carModel" required>
+                            <option value="">Select Car Model</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="ford">Ford</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Service Type -->
+                    <div class="form-group">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select Service</option>
+                            <option value="general">General Car Service</option>
+                            <option value="engine">Engine Repair</option>
+                            <option value="battery">Battery Replacement</option>
+                            <option value="oil">Oil Change & Filters</option>
+                            <option value="brake">Brake Service</option>
+                            <option value="tire">Tire & Wheel Alignment</option>
+                            <option value="ac">AC Service</option>
+                            <option value="detailing">Detailing & Washing</option>
+                            <option value="diagnostics">Car Scanning & Diagnostics</option>
+                        </select>
+                    </div>
+
+                    <!-- Date Selection -->
+                    <div class="form-group">
+                        <label for="appointmentDate">Preferred Date *</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required min="">
+                    </div>
+
+                    <!-- Time Selection -->
+                    <div class="form-group">
+                        <label for="appointmentTime">Preferred Time *</label>
+                        <select id="appointmentTime" name="appointmentTime" required>
+                            <option value="">Select Time</option>
+                            <option value="08:00">8:00 AM</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                    </div>
+
+                    <!-- Customer Details -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or issues with your vehicle..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Confirm Booking</button>
+                </form>
+
+                <!-- Booking Summary -->
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-item">
+                        <span>Service:</span>
+                        <span id="summaryService">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Date:</span>
+                        <span id="summaryDate">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Time:</span>
+                        <span id="summaryTime">-</span>
+                    </div>
+                    <div class="summary-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>You will receive a confirmation email with booking details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoCare</span>
+                    </div>
+                    <p>Your trusted partner for professional automobile services. Quality service, affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#engine">Engine Repair</a></li>
+                        <li><a href="services.html#oil">Oil Change</a></li>
+                        <li><a href="services.html#brake">Brake Service</a></li>
+                        <li><a href="services.html#ac">AC Service</a></li>
+                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Auto Street, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

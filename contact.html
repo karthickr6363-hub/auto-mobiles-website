@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AutoCare</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@autocare.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="booking.html" class="btn-book">Book Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries or service requests</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help! Reach out to us through any of the following channels.</p>
+                    
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Address</h3>
+                            <p>123 Auto Street<br>City, State 12345<br>United States</p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>info@autocare.com<br>support@autocare.com</p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Operating Hours</h3>
+                            <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <input type="text" id="contactSubject" name="subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132576894!2d-73.98811768459398!3d40.75889597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoCare</span>
+                    </div>
+                    <p>Your trusted partner for professional automobile services. Quality service, affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#engine">Engine Repair</a></li>
+                        <li><a href="services.html#oil">Oil Change</a></li>
+                        <li><a href="services.html#brake">Brake Service</a></li>
+                        <li><a href="services.html#ac">AC Service</a></li>
+                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Auto Street, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

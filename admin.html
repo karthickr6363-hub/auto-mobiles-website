@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AutoCare</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+        <div class="sidebar-header">
+            <div class="admin-logo">
+                <i class="fas fa-car"></i>
+                <span>AutoCare Admin</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bookings" class="nav-item" data-section="bookings">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#customers" class="nav-item" data-section="customers">
+                        <i class="fas fa-users"></i>
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-item" data-section="services">
+                        <i class="fas fa-wrench"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews" class="nav-item" data-section="reviews">
+                        <i class="fas fa-star"></i>
+                        <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#settings" class="nav-item" data-section="settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="index.html" class="back-to-site">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Site</span>
+            </a>
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="admin-main">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="header-left">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title">Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="admin-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="admin-notifications">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                </div>
+                <div class="admin-profile">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=ff6b35&color=fff" alt="Admin">
+                    <span>Admin User</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section class="admin-section active" id="dashboard">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Total Bookings</h3>
+                        <p class="stat-number">1,247</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 12% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Active Customers</h3>
+                        <p class="stat-number">856</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 8% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Revenue</h3>
+                        <p class="stat-number">$124,580</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 15% from last month</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Services Completed</h3>
+                        <p class="stat-number">2,134</p>
+                        <span class="stat-change positive"><i class="fas fa-arrow-up"></i> 20% from last month</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Recent Bookings</h3>
+                        <a href="#bookings" class="view-all">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Service</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Smith</td>
+                                    <td>Oil Change</td>
+                                    <td>2025-01-15</td>
+                                    <td><span class="status-badge pending">Pending</span></td>
+                                    <td><button class="btn-icon"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Sarah Johnson</td>
+                                    <td>Brake Service</td>
+                                    <td>2025-01-15</td>
+                                    <td><span class="status-badge confirmed">Confirmed</span></td>
+                                    <td><button class="btn-icon"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Mike Davis</td>
+                                    <td>Engine Repair</td>
+                                    <td>2025-01-14</td>
+                                    <td><span class="status-badge completed">Completed</span></td>
+                                    <td><button class="btn-icon"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>Emily Rodriguez</td>
+                                    <td>AC Service</td>
+                                    <td>2025-01-14</td>
+                                    <td><span class="status-badge confirmed">Confirmed</span></td>
+                                    <td><button class="btn-icon"><i class="fas fa-eye"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Revenue Overview</h3>
+                        <select class="period-select">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 3 months</option>
+                        </select>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%"><span>$12K</span></div>
+                            <div class="bar" style="height: 80%"><span>$16K</span></div>
+                            <div class="bar" style="height: 45%"><span>$9K</span></div>
+                            <div class="bar" style="height: 90%"><span>$18K</span></div>
+                            <div class="bar" style="height: 70%"><span>$14K</span></div>
+                            <div class="bar" style="height: 85%"><span>$17K</span></div>
+                            <div class="bar" style="height: 75%"><span>$15K</span></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bookings Section -->
+        <section class="admin-section" id="bookings">
+            <div class="section-header-admin">
+                <h2>Bookings Management</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> New Booking
+                </button>
+            </div>
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label>Status:</label>
+                    <select class="filter-select">
+                        <option>All</option>
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Completed</option>
+                        <option>Cancelled</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Date Range:</label>
+                    <input type="date" class="filter-input">
+                    <input type="date" class="filter-input">
+                </div>
+                <button class="btn btn-outline">
+                    <i class="fas fa-filter"></i> Apply Filters
+                </button>
+            </div>
+            <div class="dashboard-card">
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Booking ID</th>
+                                <th>Customer</th>
+                                <th>Service</th>
+                                <th>Date & Time</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#BK-2025-001</td>
+                                <td>John Smith</td>
+                                <td>Oil Change</td>
+                                <td>2025-01-15 10:00 AM</td>
+                                <td>$49.99</td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-icon danger" title="Delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#BK-2025-002</td>
+                                <td>Sarah Johnson</td>
+                                <td>Brake Service</td>
+                                <td>2025-01-15 2:00 PM</td>
+                                <td>$299.99</td>
+                                <td><span class="status-badge confirmed">Confirmed</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-icon danger" title="Delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#BK-2025-003</td>
+                                <td>Mike Davis</td>
+                                <td>Engine Repair</td>
+                                <td>2025-01-14 9:00 AM</td>
+                                <td>$599.99</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                        <button class="btn-icon danger" title="Delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customers Section -->
+        <section class="admin-section" id="customers">
+            <div class="section-header-admin">
+                <h2>Customers Management</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Customer
+                </button>
+            </div>
+            <div class="dashboard-card">
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Total Bookings</th>
+                                <th>Total Spent</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#CUST-001</td>
+                                <td>John Smith</td>
+                                <td>john.smith@email.com</td>
+                                <td>+1 (555) 123-4567</td>
+                                <td>12</td>
+                                <td>$1,249.88</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#CUST-002</td>
+                                <td>Sarah Johnson</td>
+                                <td>sarah.j@email.com</td>
+                                <td>+1 (555) 234-5678</td>
+                                <td>8</td>
+                                <td>$899.92</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#CUST-003</td>
+                                <td>Mike Davis</td>
+                                <td>mike.davis@email.com</td>
+                                <td>+1 (555) 345-6789</td>
+                                <td>15</td>
+                                <td>$2,149.85</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+                                        <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="admin-section" id="services">
+            <div class="section-header-admin">
+                <h2>Services Management</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Service
+                </button>
+            </div>
+            <div class="services-admin-grid">
+                <div class="service-admin-card">
+                    <div class="service-admin-image">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop" alt="Engine Repair">
+                    </div>
+                    <div class="service-admin-content">
+                        <h3>Engine Repair</h3>
+                        <p class="service-price">Starting at $299.99</p>
+                        <p class="service-description">Complete engine diagnostics and repair services</p>
+                        <div class="service-actions">
+                            <button class="btn btn-outline"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="btn btn-outline danger"><i class="fas fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-admin-card">
+                    <div class="service-admin-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop" alt="Oil Change">
+                    </div>
+                    <div class="service-admin-content">
+                        <h3>Oil Change & Filters</h3>
+                        <p class="service-price">Starting at $49.99</p>
+                        <p class="service-description">Regular maintenance to keep your engine running smooth</p>
+                        <div class="service-actions">
+                            <button class="btn btn-outline"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="btn btn-outline danger"><i class="fas fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-admin-card">
+                    <div class="service-admin-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop" alt="Brake Service">
+                    </div>
+                    <div class="service-admin-content">
+                        <h3>Brake Service</h3>
+                        <p class="service-price">Starting at $199.99</p>
+                        <p class="service-description">Professional brake inspection and repair</p>
+                        <div class="service-actions">
+                            <button class="btn btn-outline"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="btn btn-outline danger"><i class="fas fa-trash"></i> Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="admin-section" id="reviews">
+            <div class="section-header-admin">
+                <h2>Customer Reviews</h2>
+            </div>
+            <div class="reviews-admin-grid">
+                <div class="review-admin-card">
+                    <div class="review-admin-header">
+                        <div class="review-author-info">
+                            <img src="https://ui-avatars.com/api/?name=John+Smith&background=ff6b35&color=fff" alt="John Smith">
+                            <div>
+                                <h4>John Smith</h4>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">2025-01-10</span>
+                    </div>
+                    <p class="review-text">"Excellent service! They fixed my car's engine issue quickly and at a reasonable price. Highly recommended!"</p>
+                    <div class="review-actions">
+                        <button class="btn btn-outline"><i class="fas fa-check"></i> Approve</button>
+                        <button class="btn btn-outline danger"><i class="fas fa-times"></i> Reject</button>
+                    </div>
+                </div>
+                <div class="review-admin-card">
+                    <div class="review-admin-header">
+                        <div class="review-author-info">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=ff6b35&color=fff" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">2025-01-08</span>
+                    </div>
+                    <p class="review-text">"Professional team and great customer service. My car runs like new after their service!"</p>
+                    <div class="review-actions">
+                        <button class="btn btn-outline"><i class="fas fa-check"></i> Approve</button>
+                        <button class="btn btn-outline danger"><i class="fas fa-times"></i> Reject</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section class="admin-section" id="settings">
+            <div class="section-header-admin">
+                <h2>Settings</h2>
+            </div>
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>General Settings</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>Business Name</label>
+                            <input type="text" value="AutoCare" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="info@autocare.com" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" value="+1 (555) 123-4567" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea class="form-control">123 Auto Street, City, State 12345</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+                <div class="settings-card">
+                    <h3>Business Hours</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>Monday - Friday</label>
+                            <div class="time-inputs">
+                                <input type="time" value="08:00" class="form-control">
+                                <span>to</span>
+                                <input type="time" value="18:00" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Saturday</label>
+                            <div class="time-inputs">
+                                <input type="time" value="09:00" class="form-control">
+                                <span>to</span>
+                                <input type="time" value="17:00" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Sunday</label>
+                            <div class="time-inputs">
+                                <input type="time" value="10:00" class="form-control">
+                                <span>to</span>
+                                <input type="time" value="16:00" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

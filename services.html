@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AutoCare</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@autocare.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn-book">Book Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive automotive solutions for all your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-page">
+        <div class="container">
+            <div class="services-list">
+                <!-- General Car Service -->
+                <div class="service-item" id="general">
+                    <div class="service-item-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop" alt="General Service" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>General Car Service</h2>
+                        <p>Complete vehicle inspection and maintenance to keep your car running smoothly. Includes fluid checks, filter replacements, and overall health assessment.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Complete vehicle inspection</li>
+                            <li><i class="fas fa-check"></i> Fluid level checks</li>
+                            <li><i class="fas fa-check"></i> Filter replacements</li>
+                            <li><i class="fas fa-check"></i> Tire pressure check</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Engine Repair -->
+                <div class="service-item" id="engine">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg" alt="Engine Repair" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Engine Repair</h2>
+                        <p>Expert engine diagnostics and repair services. Our certified technicians can identify and fix any engine issues to restore your vehicle's performance.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Engine diagnostics</li>
+                            <li><i class="fas fa-check"></i> Engine rebuilds</li>
+                            <li><i class="fas fa-check"></i> Timing belt replacement</li>
+                            <li><i class="fas fa-check"></i> Performance tuning</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Battery Replacement -->
+                <div class="service-item" id="battery">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/4374843/pexels-photo-4374843.jpeg" alt="Battery Replacement" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Battery Replacement</h2>
+                        <p>Quick and reliable battery replacement service. We test your battery, recommend the right replacement, and install it professionally.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Battery testing</li>
+                            <li><i class="fas fa-check"></i> Battery replacement</li>
+                            <li><i class="fas fa-check"></i> Terminal cleaning</li>
+                            <li><i class="fas fa-check"></i> Charging system check</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Oil Change & Filters -->
+                <div class="service-item" id="oil">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/13065697/pexels-photo-13065697.jpeg" alt="Oil Change" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Oil Change & Filters</h2>
+                        <p>Regular oil changes are essential for engine longevity. We use quality oils and filters to keep your engine running smoothly.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Premium oil change</li>
+                            <li><i class="fas fa-check"></i> Oil filter replacement</li>
+                            <li><i class="fas fa-check"></i> Air filter replacement</li>
+                            <li><i class="fas fa-check"></i> Cabin filter replacement</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Brake Service -->
+                <div class="service-item" id="brake">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/4022543/pexels-photo-4022543.jpeg" alt="Brake Service" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Brake Service</h2>
+                        <p>Professional brake inspection and repair to ensure your safety. We check pads, rotors, calipers, and brake fluid.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Brake pad replacement</li>
+                            <li><i class="fas fa-check"></i> Rotor resurfacing/replacement</li>
+                            <li><i class="fas fa-check"></i> Brake fluid flush</li>
+                            <li><i class="fas fa-check"></i> Caliper service</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Tire & Wheel Alignment -->
+                <div class="service-item" id="tire">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/6720507/pexels-photo-6720507.jpeg" alt="Tire Service" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Tire & Wheel Alignment</h2>
+                        <p>Complete tire services including rotation, balancing, and wheel alignment to ensure even wear and optimal handling.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Tire rotation</li>
+                            <li><i class="fas fa-check"></i> Wheel balancing</li>
+                            <li><i class="fas fa-check"></i> Wheel alignment</li>
+                            <li><i class="fas fa-check"></i> Tire replacement</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- AC Service -->
+                <div class="service-item" id="ac">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/6471913/pexels-photo-6471913.jpeg" alt="AC Service" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>AC Service</h2>
+                        <p>Complete AC system maintenance and repair to keep you cool. We service all AC components including compressors, condensers, and refrigerant.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> AC diagnostics</li>
+                            <li><i class="fas fa-check"></i> Refrigerant recharge</li>
+                            <li><i class="fas fa-check"></i> Compressor repair</li>
+                            <li><i class="fas fa-check"></i> AC filter replacement</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Detailing & Washing -->
+                <div class="service-item" id="detailing">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/6872156/pexels-photo-6872156.jpeg" alt="Car Detailing" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Detailing & Washing</h2>
+                        <p>Professional car detailing services to keep your vehicle looking like new. Interior and exterior cleaning with premium products.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Exterior wash & wax</li>
+                            <li><i class="fas fa-check"></i> Interior deep cleaning</li>
+                            <li><i class="fas fa-check"></i> Paint protection</li>
+                            <li><i class="fas fa-check"></i> Engine bay cleaning</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Car Scanning & Diagnostics -->
+                <div class="service-item" id="diagnostics">
+                    <div class="service-item-image">
+                        <img src="https://images.pexels.com/photos/4116193/pexels-photo-4116193.jpeg" alt="Diagnostics" loading="lazy">
+                    </div>
+                    <div class="service-item-content">
+                        <h2>Car Scanning & Diagnostics</h2>
+                        <p>Advanced diagnostic scanning to identify issues before they become major problems. We use the latest diagnostic equipment.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> OBD-II scanning</li>
+                            <li><i class="fas fa-check"></i> Computer diagnostics</li>
+                            <li><i class="fas fa-check"></i> Error code reading</li>
+                            <li><i class="fas fa-check"></i> Performance analysis</li>
+                        </ul>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoCare</span>
+                    </div>
+                    <p>Your trusted partner for professional automobile services. Quality service, affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#engine">Engine Repair</a></li>
+                        <li><a href="services.html#oil">Oil Change</a></li>
+                        <li><a href="services.html#brake">Brake Service</a></li>
+                        <li><a href="services.html#ac">AC Service</a></li>
+                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Auto Street, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

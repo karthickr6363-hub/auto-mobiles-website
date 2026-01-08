@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare - Professional Automobile Service Center</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@autocare.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-car"></i>
+                    <span>AutoCare</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn-book">Book Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 25,000+ Customers</span>
+                </span>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Expert Car Service</span>
+                    <span class="hero-title-accent">& Repair</span>
+                </h1>
+                <p class="hero-tagline">Your trusted partner for all automobile needs. Fast, reliable, and affordable service that keeps you on the road.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">15+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">98%</div>
+                        <div class="hero-stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number">4.9/5</div>
+                        <div class="hero-stat-label">Average Rating</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="booking.html" class="btn btn-primary btn-hero">
+                        <span>Book Service Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="services.html" class="btn btn-secondary btn-hero">
+                        <span>Our Services</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&h=1080&fit=crop" alt="Car Service" loading="lazy">
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Service</h3>
+                    <p>Quick turnaround time without compromising quality</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Technicians</h3>
+                    <p>Certified professionals with years of experience</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent pricing with no hidden charges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Featured Services</h2>
+                <p>Comprehensive automotive solutions for all your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/35530432/pexels-photo-35530432.jpeg" alt="Engine Repair" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Engine Repair</h3>
+                        <p>Complete engine diagnostics and repair services</p>
+                        <a href="services.html#engine" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg" alt="Oil Change" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Oil Change & Filters</h3>
+                        <p>Regular maintenance to keep your engine running smooth</p>
+                        <a href="services.html#oil" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg" alt="Brake Service" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Brake Service</h3>
+                        <p>Professional brake inspection and repair by AutoCare</p>
+                        <a href="services.html#brake" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg" alt="AC Service" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>AC Service</h3>
+                        <p>Complete AC system maintenance and repair by AutoCare</p>
+                        <a href="services.html#ac" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/4374843/pexels-photo-4374843.jpeg" alt="Battery Replacement" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Battery Replacement</h3>
+                        <p>Quick and reliable battery testing and replacement</p>
+                        <a href="services.html#battery" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/17429095/pexels-photo-17429095.jpeg" alt="Tire & Wheel Alignment" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tire & Wheel Alignment</h3>
+                        <p>Complete tire services and wheel alignment for optimal handling</p>
+                        <a href="services.html#tire" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Slider -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Trusted by thousands of satisfied customers</p>
+            </div>
+            <div class="reviews-slider" id="reviewsSlider">
+                <div class="review-card active">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excellent service! They fixed my car's engine issue quickly and at a reasonable price. Highly recommended!"</p>
+                    <div class="review-author">
+                        <strong>John Smith</strong>
+                        <span>Regular Customer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Professional team and great customer service. My car runs like new after their service!"</p>
+                    <div class="review-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Happy Customer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best auto service center in town! Fast, reliable, and affordable. Will definitely come back!"</p>
+                    <div class="review-author">
+                        <strong>Mike Davis</strong>
+                        <span>Loyal Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevReview"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots" id="reviewDots"></div>
+                <button class="slider-btn next" id="nextReview"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Brands We Service</h2>
+                <p>We work with all major automobile brands</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Toyota-Logo-700x394.png" alt="Toyota" loading="lazy">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo-700x394.png" alt="Honda" loading="lazy">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/05/Ford-Logo-500x281.png" alt="Ford" loading="lazy">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/BMW-Logo.png" alt="BMW" loading="lazy">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/05/Mercedes-Benz-Logo.png" alt="Mercedes" loading="lazy">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/03/Audi-Logo-700x394.png" alt="Audi" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoCare</span>
+                    </div>
+                    <p>Your trusted partner for professional automobile services. Quality service, affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#engine">Engine Repair</a></li>
+                        <li><a href="services.html#oil">Oil Change</a></li>
+                        <li><a href="services.html#brake">Brake Service</a></li>
+                        <li><a href="services.html#ac">AC Service</a></li>
+                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Auto Street, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@autocare.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
